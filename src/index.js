@@ -29,6 +29,11 @@ const routes = [
     path:"/myform",
     name:"MyForm",
     component:() => import("../views/MyForm.vue")
+  },
+  {
+    path:"/basic-template",
+    name:"BasicTemplate",
+    component: () => import("./views/BasicTemplate.vue")
   }
 ]
 

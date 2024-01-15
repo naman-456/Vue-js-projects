@@ -1,0 +1,19 @@
+{
+    "name": "Vue-js-projects",
+    "version": "0.0.0",
+    "scripts": {
+      "serve": "vite preview",
+      "build": "npm run build:client && npm run build:server",
+      "dev": "node server",
+      "prod": "cross-env NODE_ENV=production supervisor server",
+      "build:client": "vite build --mode production --outDir dist/client --ssrManifest ",
+      "build:server": "vite build --mode production --outDir dist/server --ssr src/entry-server.js "
+    },
+    "dependencies": {
+      "vue-router": "^4.0.13",
+      "vuex": "^4.0.2"
+    },
+    "devDependencies": {
+    }
+  }
+  
